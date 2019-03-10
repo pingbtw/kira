@@ -6,6 +6,7 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.Random;
 
 
 public class FunCommands extends ListenerAdapter {
@@ -40,6 +41,14 @@ public class FunCommands extends ListenerAdapter {
                 event.getChannel().sendMessage("Responded in " + (elapsedTime - startTime) + "ms").queue();
             }
         }
+
+        if (messageSent[0].equalsIgnoreCase("!8ball")) {
+            event.getChannel().sendMessage(EightBall()).queue();
+        }
+
+        if (messageSent[0].equalsIgnoreCase("!invite")) {
+            event.getChannel().sendMessage(event.getChannel().createInvite().setMaxAge(60).complete().getURL()).queue();
+        }
     }
 
     private static String xkcdParser() throws Exception {
@@ -58,4 +67,12 @@ public class FunCommands extends ListenerAdapter {
                 reader.close();
         }
     }
+    public static String EightBall() {
+        String[] outcomes = new String[]{
+                "Certainly", "Decidedly so", "Unlikely", "I have a good feeling about this", "No.", "Yes", "Maybe"
+        };
+        int output = new Random().nextInt((7) +1) +1;
+        return outcomes[output];
+    }
 }
+
