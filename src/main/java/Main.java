@@ -21,6 +21,7 @@ public class Main {
         JDA jda = new JDABuilder(GetToken("token")).build();
         jda.getPresence().setGame(Game.playing("Learning2Bot"));
         jda.addEventListener(
+                new JoinListener(),
                 new MessageLogger(),
                 new FunCommands());
 
