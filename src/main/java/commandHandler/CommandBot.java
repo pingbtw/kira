@@ -3,6 +3,7 @@ package commandHandler;
 
 import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
+import commands.*;
 import net.dv8tion.jda.core.entities.Game;
 
 
@@ -19,7 +20,6 @@ public class CommandBot {
                 new XkcdLatest(),
                 new PingCommand(),
                 new TestCommand(),
-                new KickCommand(),
                 new EightBall());
         return commandClientBuilder.build();
     }
