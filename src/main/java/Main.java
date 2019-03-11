@@ -1,4 +1,5 @@
-import Events.*;
+import commandHandler.CommandBot;
+import commands.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,9 +23,8 @@ public class Main {
         jda.addEventListener(
                 new CommandBot().mod(),
                 new JoinListener(),
-                new KickCommand(),
                 new MessageLogger(),
-                new FunCommands());
+                new InviteGenerator());
     }
 
         public static String GetToken(String value) throws Exception {
