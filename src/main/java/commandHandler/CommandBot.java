@@ -15,9 +15,12 @@ public class CommandBot {
         commandClientBuilder.setGame(Game.playing("Learning2Bot"));
         commandClientBuilder.setOwnerId("394574967448141826");
         commandClientBuilder.addCommands(
+                new XkcdRandom(),
+                new XkcdLatest(),
                 new PingCommand(),
                 new TestCommand(),
-                new KickCommand());
+                new KickCommand(),
+                new EightBall());
         return commandClientBuilder.build();
     }
 }

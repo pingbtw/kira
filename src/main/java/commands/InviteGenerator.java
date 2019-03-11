@@ -1,4 +1,4 @@
-package Events;
+package commands;
 
 import com.google.gson.Gson;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
