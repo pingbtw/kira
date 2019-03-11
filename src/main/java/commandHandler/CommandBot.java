@@ -1,4 +1,4 @@
-package Events;
+package commandHandler;
 
 
 import com.jagrosh.jdautilities.command.CommandClient;

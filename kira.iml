@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -19,8 +19,13 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: net.java.dev.jna:jna:4.4.0" level="project" />
     <orderEntry type="library" name="Maven: club.minnced:opus-java-natives:1.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:commons-collections4:4.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.json:json:20160810" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20160810" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: net.sf.trove4j:trove4j:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.jagrosh:jda-utilities-command:2.1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.jagrosh:jda-utilities-commons:2.1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.jagrosh:jda-utilities-doc:2.1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.jagrosh:jda-utilities-examples:2.1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.jagrosh:jda-utilities-menu:2.1.5" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.3.0-alpha1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.8.0-beta4" level="project" />
