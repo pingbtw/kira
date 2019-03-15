@@ -1,9 +1,9 @@
-import commandHandler.CommandBot;
-import commands.*;
-
+import Events.JoinListener;
+import Events.MessageLogger;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import handler.CommandBot;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import com.google.gson.Gson;
@@ -23,12 +23,11 @@ public class Main {
         jda.addEventListener(
                 new CommandBot().mod(),
                 new JoinListener(),
-                new MessageLogger(),
-                new InviteGenerator());
+                new MessageLogger());
     }
 
         public static String GetToken(String value) throws Exception {
-            String path = "";
+            String path = "path";
             BufferedReader buffer = new BufferedReader(new FileReader(path));
             Gson gson = new Gson();
             Properties json = gson.fromJson(buffer, Properties.class);
