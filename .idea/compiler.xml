@@ -9,8 +9,8 @@
         <module name="kira" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="kira" target="1.5" />
+    <bytecodeTargetLevel target="10">
+      <module name="kira" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

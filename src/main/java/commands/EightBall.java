@@ -1,4 +1,4 @@
-package Events;
+package commands;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
@@ -13,6 +13,7 @@ public class EightBall extends Command {
     }
     @Override
     protected void execute(CommandEvent commandEvent) {
+
         commandEvent.reply(eightBall());
     }
 
@@ -20,7 +21,7 @@ public class EightBall extends Command {
         String[] outcomes = new String[]{
                 "Certainly", "Decidedly so", "Unlikely", "I have a good feeling about this", "No.", "Yes", "Maybe"
         };
-        int output = new Random().nextInt((7) +1) +1;
+        int output = new Random().nextInt((6));
         return outcomes[output];
     }
 }

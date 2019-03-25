@@ -9,7 +9,7 @@ public class MySqlConnector {
         Connection myConn = null;
          try {
              myConn = DriverManager.getConnection(
-                     "path", "user", "password");
+                     "", "", "");
              return myConn;
          } catch (Exception e) {
              e.printStackTrace();

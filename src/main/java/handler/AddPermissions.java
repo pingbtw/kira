@@ -1,10 +1,11 @@
 package handler;
 
 import database.MySqlConnector;
+import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 import java.sql.Statement;
 
-public class AddPermissions {
+public class AddPermissions extends ListenerAdapter {
     public static void addPermissions(String id, int permissions) {
 
         try {
